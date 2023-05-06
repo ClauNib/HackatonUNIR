@@ -2,6 +2,8 @@
 const registrationForm = document.querySelector('form');
 const nameField = document.getElementById('name');
 const emailField = document.getElementById('email');
+const passwordField = document.getElementById('password');
+const password1Field = document.getElementById('password1');
 const phoneField = document.getElementById('phone');
 const dobField = document.getElementById('dob');
 const genderField = document.getElementById('gender');
@@ -17,6 +19,8 @@ registrationForm.addEventListener('submit', (event) => {
   // Get the values of the input fields
   const name = nameField.value;
   const email = emailField.value;
+  const password = passwordField.value;
+  const password1 = password1Field.value;
   const phone = phoneField.value;
   const dob = dobField.value;
   const gender = genderField.value;
@@ -30,6 +34,8 @@ registrationForm.addEventListener('submit', (event) => {
   // Clear the input fields
   nameField.value = '';
   emailField.value = '';
+  passwordField.value = '';
+  password1Field.value = '';
   phoneField.value = '';
   dobField.value = '';
   genderField.value = '';
