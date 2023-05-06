@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Consolas', monospace;
   }
   
   /* Styles for login section */
@@ -12,29 +12,29 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #BCC4DB;
   }
   
   .login-title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .login-title h1 {
-    font-size: 36px;
+    font-size: 47px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   
   .login-title p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     margin-bottom: 0;
   }
   
   .login-form {
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: #6EB4D1;
+    border-radius: 0px;
     padding: 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
@@ -47,10 +47,10 @@ body {
   
   .login-form a {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 14px;
     font-weight: 400;
-    color: #666;
+    color: #6987C9;
   }
   
   .login-form label {
@@ -75,7 +75,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #08ac4b;
+    background-color: #7880B5;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -89,8 +89,7 @@ body {
   
   .remember-me {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    justify-content: flex-start;
     font-size: 14px;
     font-weight: 400;
     color: #666;
@@ -98,6 +97,7 @@ body {
   
   .remember-me input {
     margin-right: 10px;
+    align-items: start;
   }
   
   .login-social {
