@@ -6,6 +6,7 @@ const phoneField = document.getElementById('phone');
 const dobField = document.getElementById('dob');
 const genderField = document.getElementById('gender');
 const countryField = document.getElementById('country');
+const provinceField = document.getElementById('province');
 const profilePicField = document.getElementById('profile-pic');
 const termsCheckbox = document.getElementById('terms');
 
@@ -20,6 +21,7 @@ registrationForm.addEventListener('submit', (event) => {
   const dob = dobField.value;
   const gender = genderField.value;
   const country = countryField.value;
+  const province = provinceField.value;
   const profilePic = profilePicField.value;
   const terms = termsCheckbox.checked;
 
@@ -32,6 +34,7 @@ registrationForm.addEventListener('submit', (event) => {
   dobField.value = '';
   genderField.value = '';
   countryField.value = '';
+  provinceField.value = '';
   profilePicField.value = '';
   termsCheckbox.checked = false;
 });
