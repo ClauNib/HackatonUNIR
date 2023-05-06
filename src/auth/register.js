@@ -3,7 +3,7 @@ const registrationForm = document.querySelector('form');
 const usernameField = document.getElementById('username');
 const emailField = document.getElementById('email');
 const passwordField = document.getElementById('password');
-const password1Field = document.getElementById('password1');
+const password2Field = document.getElementById('password2');
 const phoneField = document.getElementById('phone');
 const dobField = document.getElementById('dob');
 const genderField = document.getElementById('gender');
@@ -20,7 +20,7 @@ registrationForm.addEventListener('submit', (event) => {
   const username = usernameField.value;
   const email = emailField.value;
   const password = passwordField.value;
-  const password1 = password1Field.value;
+  const password2 = password2Field.value;
   const phone = phoneField.value;
   const dob = dobField.value;
   const gender = genderField.value;
@@ -34,7 +34,7 @@ registrationForm.addEventListener('submit', (event) => {
   // Clear the input fields
   usernameField.value = '';
   emailField.value = '';
-  
+
   passwordField.value = '';
   password1Field.value = '';
   phoneField.value = '';
