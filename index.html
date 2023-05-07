@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Trevor Project</title>
+  <title>Malvaloca Rural</title>
   <link rel="stylesheet" href="index.css">
-  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .profileBtnPos, .logoutBtnPos {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .logoutBtnPos {
+      position: fixed;
+      right: 10px;
+      top: 5px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="grid">
-      <img src="logo.png" alt="Malvaloca Rural">
+      <img src="https://github.com/LauraDanielamg/HackatonUNIR/blob/main/Malvaloca_Rural_NOEslogan-removebg.png?raw=true" alt="Malvaloca Rural" class = 'logo'>
     </div>
     <nav>
       <ul>
@@ -21,8 +33,9 @@
       </ul>
     </nav>
     <div class="cta">
-      <a href="#">Dona</a>
-    </div >
+      <a href="#" id="profileBtn" class="profileBtnPos">Profile</a>
+      <a href="#" id="logoutBtn" class="logoutBtnPos">Close Session</a>
+    </div>
   </header>
   <main class='grid-container'>
     <div class="grid-item1">
@@ -32,7 +45,7 @@
     </div>
     <div class="grid-item2">
       <h1>Descubre en nuestro blog</h1>
-      <p>Estuve en el Hackaton y quise suisidarme</p>
+      <p>Entra aqui!!</p>
       <a href="#">Saber más</a>
     </div>
     <div class="grid-item3">
@@ -46,20 +59,28 @@
       <a href="#">Saber más</a>
     </div>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#">Contáctanos</a></li>
-      <li><a href="#">Política de Privacidad</a></li>
-      <li><a href="#">Términos de Uso</a></li>
-      <li><a href="#">Mapa</a></li>
-    </ul>
-    <div class="social-media">
-      <a href="#"><img src="facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="instagram.png" alt="Instagram"></a>
-    </div>
-  </footer>
+  <script>
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+      // Remove access token and reload the page
+      localStorage.removeItem("accessToken");
+      location.reload();
+    });
 
-  <script src="./resources/js/index.js"></script>
-</body>
+    document.addEventListener("DOMContentLoaded", function () {
+      var profileBtn = document.getElementById("profileBtn");
+      var logoutBtn = document.getElementById("logoutBtn");
+
+      // Check if the user is logged in
+      var isLoggedIn = !!localStorage.getItem("accessToken");
+
+      if (isLoggedIn) {
+        profileBtn.style.display = "inline-block";
+        logoutBtn.style.display = "inline-block";
+      } else {
+        profileBtn.style.display = "none";
+        logoutBtn.style.display = "none";
+      }
+    });
+  </script>
+  </body>
 </html>
