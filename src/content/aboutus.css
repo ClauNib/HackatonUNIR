@@ -1,48 +1,4 @@
 /* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #333;
-  color: #fff;
-}
-
-.logo img {
-  height: 50px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-header,
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
 
 .container {
   max-width: 1200px;
@@ -227,3 +183,125 @@ h3 {
   .testimonial-section {
     margin-bottom: 20px; /* Adjust this value to your desired spacing */
   }
+
+  /* Custom CSS */
+body {
+  font-family: 'Consolas', monospace;
+  background-color: #BCC4DB;
+  color: #4a4a4a;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.cta a {
+  background-color: #C0A9B0;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  background-color: #6987C9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3,
+.grid-item4 {
+  background-color: #6EB4D1;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.google-map {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin-right: 1rem;
+}
+
+footer a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.social-media a {
+  margin-right: 0.5rem;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tailwind CSS */
+h1 {
+  @apply text-2xl font-bold;
+}
+
+p {
+  @apply text-base;
+}
+
+a {
+  @apply transition duration-200 ease-in-out;
+}
+
+a:hover {
+  @apply text-blue-500;
+}

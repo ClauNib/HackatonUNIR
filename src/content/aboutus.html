@@ -5,11 +5,12 @@
   <title>My Website</title>
   <!-- Add CSS file -->
   <link rel="stylesheet" href="aboutus.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Malvaloca Rural">
+    <div class="grid">
+      <img src="https://github.com/LauraDanielamg/HackatonUNIR/blob/main/Malvaloca_Rural_NOEslogan-removebg.png?raw=true" alt="Malvaloca Rural" class = 'logo'>
     </div>
     <nav>
       <ul>
@@ -20,7 +21,8 @@
       </ul>
     </nav>
     <div class="cta">
-      <a href="#">Dona</a>
+      <a href="#" id="profileBtn" class="profileBtnPos">Profile</a>
+      <a href="#" id="logoutBtn" class="logoutBtnPos">Close Session</a>
     </div>
   </header>
 
@@ -28,13 +30,13 @@
     <section id="our-impact">
       <div class="container">
         <h2>Nuestro Impacto</h2>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
             <h3>Servicios de Crisis</h3>
             <p>Malvaloca Rural proporciona servicios de intervención en crisis y prevención de suicidios a personas LGBTQ jóvenes en crisis. Contamos con personal con experiencia, disponible 24h por teléfono, mensaje o chat, para proporcionar apoyo y ayuda a quienes lo necesiten.</p>
             <a href="#" class="btn btn-primary">Saber Más</a>
           </div>
-          <div class="col-md-6">
+          <div>
             <h3>Espacio Malvaloca Rural</h3>
             <p>Espacio Malvaloca Rural es una red social para gente LGBTQ joven. Proporciona una comunidad online segura y de apoyo donde la gente joven puede conectar con otros, desarrollar amistades y recibir consejo y apoyo de otros usuarios.</p>
             <a href="#" class="btn btn-primary">Saber Más</a>
